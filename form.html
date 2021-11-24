@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/lib/nice-select.css">
+    <link rel="stylesheet" href="assets/css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/front/forms/forms.css">
+    <link rel="stylesheet" href="assets/css/front/account/account.css">
+    <link rel="stylesheet" href="assets/css/front/main.css">
+    <title>Профиль</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <section class='account'>
+            <aside class="account-sidebar">
+                <div class="account-sidebar__top">
+                    <a href="" class="account-sidebar__logo">
+                        <img src="assets/img/front/logo.png" alt="">
+                    </a>
+                    <button class="account-sidebar__close">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM10 8.586L12.828 5.757L14.243 7.172L11.414 10L14.243 12.828L12.828 14.243L10 11.414L7.172 14.243L5.757 12.828L8.586 10L5.757 7.172L7.172 5.757L10 8.586Z" fill="#E13636"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="account-sidebar__items">
+                    <div class="account-sidebar__item">
+                        <a href="" class="account-sidebar__link account-sidebar__link--active">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 5V2C7 1.73478 7.10536 1.48043 7.29289 1.29289C7.48043 1.10536 7.73478 1 8 1H16C16.2652 1 16.5196 1.10536 16.7071 1.29289C16.8946 1.48043 17 1.73478 17 2V5H21C21.2652 5 21.5196 5.10536 21.7071 5.29289C21.8946 5.48043 22 5.73478 22 6V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V6C2 5.73478 2.10536 5.48043 2.29289 5.29289C2.48043 5.10536 2.73478 5 3 5H7ZM16 15H13V16H11V15H8V19H16V15ZM8 7V13H11V12H13V13H16V7H8ZM6 13V7H4V13H6ZM18 13H20V7H18V13ZM6 15H4V19H6V15ZM18 15V19H20V15H18ZM9 3V5H15V3H9Z" fill="white" fill-opacity="0.5"/>
+                            </svg>
+                            <span>Кабинет</span>
+                        </a>
+                    </div>
+                    <div class="account-sidebar__item">
+                        <a href="" class="account-sidebar__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7956 2 19V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V15H22V19C22 19.7956 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7956 22 19 22ZM18 17V19C18 19.2652 18.1054 19.5196 18.2929 19.7071C18.4804 19.8946 18.7348 20 19 20C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19V17H18ZM16 20V4H4V19C4 19.2652 4.10536 19.5196 4.29289 19.7071C4.48043 19.8946 4.73478 20 5 20H16ZM6 7H14V9H6V7ZM6 11H14V13H6V11ZM6 15H11V17H6V15Z" fill="white" fill-opacity="0.5"/>
+                            </svg>
+                            <span>Новости</span>
+                        </a>
+                    </div>
+                    <div class="account-sidebar__item">
+                        <a href="" class="account-sidebar__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.455 19L2 22.5V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V18C22 18.2652 21.8946 18.5196 21.7071 18.7071C21.5196 18.8946 21.2652 19 21 19H6.455ZM4 18.385L5.763 17H20V5H4V18.385ZM11 13H13V15H11V13ZM11 7H13V12H11V7Z" fill="white" fill-opacity="0.5"/>
+                            </svg>
+                            <span>Отзывы</span>
+                        </a>
+                    </div>
+                    <div class="account-sidebar__item">
+                        <div class="account-sidebar__item-show">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 22H5C4.20435 22 3.44129 21.6839 2.87868 21.1213C2.31607 20.5587 2 19.7956 2 19V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V15H22V19C22 19.7956 21.6839 20.5587 21.1213 21.1213C20.5587 21.6839 19.7956 22 19 22ZM18 17V19C18 19.2652 18.1054 19.5196 18.2929 19.7071C18.4804 19.8946 18.7348 20 19 20C19.2652 20 19.5196 19.8946 19.7071 19.7071C19.8946 19.5196 20 19.2652 20 19V17H18ZM16 20V4H4V19C4 19.2652 4.10536 19.5196 4.29289 19.7071C4.48043 19.8946 4.73478 20 5 20H16ZM6 7H14V9H6V7ZM6 11H14V13H6V11ZM6 15H11V17H6V15Z" fill="white" fill-opacity="0.5"/>
+                            </svg>
+                            <span>Новости</span>
+                            <i>
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.63597 5.06099L11.586 0.110992L13 1.52499L6.63597 7.88899L0.271973 1.52499L1.68597 0.110992L6.63597 5.06099Z" fill="#B8EF42"/>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="account-sidebar__item-hidden">
+                            <a href="">Меню второго уровня</a>
+                            <a href="">Меню второго уровня</a>
+                            <a href="">Меню второго уровня</a>
+                        </div>
+                    </div>
+                    <div class="account-sidebar__item">
+                        <a href="" class="account-sidebar__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.455 19L2 22.5V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V18C22 18.2652 21.8946 18.5196 21.7071 18.7071C21.5196 18.8946 21.2652 19 21 19H6.455ZM4 18.385L5.763 17H20V5H4V18.385ZM11 13H13V15H11V13ZM11 7H13V12H11V7Z" fill="white" fill-opacity="0.5"/>
+                            </svg>
+                            <span>Отзывы</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <main class="account-content">
+                <div class="account-header">
+                    <button class="account-sidebar-btn">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="#52B4EC"></path>
+                        </svg>
+                    </button>
+                    <div class="account-header__lk">
+                        <div>
+                            <div class="account-header__lk-name">Евгений Пиллипок</div>
+                            <div class="account-header__lk-level">3 уровень силы</div>
+                        </div>
+                        <i>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM5.013 16.256C6.42855 17.3877 8.18768 18.0029 10 18C11.97 18 13.773 17.288 15.167 16.108C14.5157 15.4397 13.7371 14.9089 12.877 14.5468C12.017 14.1847 11.0931 13.9988 10.16 14C9.19259 13.9989 8.2355 14.1989 7.34947 14.5872C6.46343 14.9756 5.66778 15.5439 5.013 16.256ZM3.616 14.82C4.45645 13.9281 5.47067 13.2177 6.59614 12.7327C7.72161 12.2477 8.93448 11.9984 10.16 12C11.3417 11.9985 12.512 12.2304 13.6037 12.6824C14.6955 13.1344 15.6873 13.7976 16.522 14.634C17.3781 13.4291 17.8836 12.0106 17.9826 10.5359C18.0815 9.06119 17.77 7.58789 17.0825 6.27946C16.395 4.97102 15.3585 3.87862 14.088 3.12345C12.8174 2.36827 11.3625 1.97984 9.8846 2.00125C8.40672 2.02267 6.96366 2.45308 5.71552 3.24476C4.46738 4.03643 3.46296 5.1584 2.81369 6.4862C2.16442 7.814 1.89569 9.29571 2.03732 10.7669C2.17894 12.2382 2.72537 13.6414 3.616 14.821V14.82ZM10 11C8.93913 11 7.92172 10.5786 7.17157 9.82843C6.42143 9.07828 6 8.06087 6 7C6 5.93913 6.42143 4.92172 7.17157 4.17157C7.92172 3.42143 8.93913 3 10 3C11.0609 3 12.0783 3.42143 12.8284 4.17157C13.5786 4.92172 14 5.93913 14 7C14 8.06087 13.5786 9.07828 12.8284 9.82843C12.0783 10.5786 11.0609 11 10 11ZM10 9C10.5304 9 11.0391 8.78929 11.4142 8.41421C11.7893 8.03914 12 7.53043 12 7C12 6.46957 11.7893 5.96086 11.4142 5.58579C11.0391 5.21071 10.5304 5 10 5C9.46957 5 8.96086 5.21071 8.58579 5.58579C8.21071 5.96086 8 6.46957 8 7C8 7.53043 8.21071 8.03914 8.58579 8.41421C8.96086 8.78929 9.46957 9 10 9Z" fill="white"/>
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="account-header__language">
+                        <div class="account-header__language-show">
+                            <div class="account-header__language-currents">
+                                <div data-lang-current="1" class="account-header__language-current account-header__language-current--active">
+                                    <img src="assets/img/front/account/ru.png" alt="">
+                                    <span>RU</span>
+                                </div>
+                                <div data-lang-current="2" class="account-header__language-current">
+                                    <img src="assets/img/front/account/en.png" alt="">
+                                    <span>EN</span>
+                                </div>
+                                <div data-lang-current="3" class="account-header__language-current">
+                                    <img src="assets/img/front/account/de.png" alt="">
+                                    <span>DE</span>
+                                </div>
+                            </div>
+                            <i>
+                                <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.99999 5.67198L11.95 0.721985L13.364 2.13598L6.99999 8.49998L0.635986 2.13598L2.04999 0.721985L6.99999 5.67198Z" fill="#B8EF42"/>
+                                </svg>
+                            </i>
+                        </div>
+                        <div class="account-header__language-hidden">
+                            <div data-lang-variant="1" class="account-header__language-variant account-header__language-variant--active">
+                                <img src="assets/img/front/account/ru.png" alt="">
+                                <span>RU</span>
+                            </div>
+                            <div data-lang-variant="2" class="account-header__language-variant">
+                                <img src="assets/img/front/account/en.png" alt="">
+                                <span>EN</span>
+                            </div>
+                            <div data-lang-variant="3" class="account-header__language-variant">
+                                <img src="assets/img/front/account/de.png" alt="">
+                                <span>DE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="account-header__burger">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="#52B4EC"/>
+                        </svg>
+                    </button>
+                    <div class="account-header__burger-menu">
+                        <div class="account-header__burger-item">
+                            <a href="" class="account-header__burger-link">Личные данные</a>
+                        </div>
+                        <div class="account-header__burger-item">
+                            <div class="account-header__burger-item-show">
+                                <span>аккаунт</span>
+                                <i>
+                                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.99999 5.67198L11.95 0.721985L13.364 2.13598L6.99999 8.49998L0.635986 2.13598L2.04999 0.721985L6.99999 5.67198Z" fill="#B8EF42"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="account-header__burger-item-hidden">
+                                <a href="">Меню второго уровня</a>
+                                <a href="">Меню второго уровня</a>
+                                <a href="">Меню второго уровня</a>
+                            </div>
+                        </div>
+                        <div class="account-header__burger-item">
+                            <a href="" class="account-header__burger-link">изменения пароля</a>
+                        </div>
+                        <div class="account-header__burger-item">
+                            <a href="" class="account-header__burger-link">выход</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-main">
+
+                    <div class="account-main__left">
+                        <div class="custom-form">
+                            <h1 class="form__title">h1 заголовок первого уровня</h1>
+                            <h2 class="form__subtitle">h2 заголовок второго уровня</h2>
+                            <div class="form__list-title">ненумерованный список</div>
+                            <ul class="form__ul">
+                                <li>Продажи оборонной продукции увеличились почти на треть и достигли $4,7 млрд</li>
+                                <li>В чем правы и где могут ошибаться оппоненты Александра Лукашенко</li>
+                                <li>Она должна стать альтернативой сегодняшней системе, основанной на американском долларе</li>
+                                <li>Где и как просадить деньги в рулетку</li>
+                            </ul>
+                            <div class="form__list-title">нумерованный список</div>
+                            <ol class="form__ol">
+                                <li>Продажи оборонной продукции увеличились почти на треть и достигли $4,7 млрд</li>
+                                <li>В чем правы и где могут ошибаться оппоненты Александра Лукашенко</li>
+                                <li>Она должна стать альтернативой сегодняшней системе, основанной на американском долларе</li>
+                                <li>Где и как просадить деньги в рулетку</li>
+                            </ol>
+
+                            <p class="form__p">
+                                Продажи <a href="">ссылка ховер</a> оборонной <a href="">непосещенная ссылка</a> продукции <a href="">ссылка при клике</a> увеличились почти на треть и достигли $4,7 млрд
+                            </p>
+
+
+                            <div class="form__groups">
+                                <div class="form-group">
+                                    <input type="text">
+                                    <label for="">Email</label>
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM18 4.238L10.072 11.338L2 4.216V16H18V4.238ZM2.511 2L10.061 8.662L17.502 2H2.511Z" fill="#B8EF42"/>
+                                    </svg>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="input-error">
+                                    <label for="">Email</label>
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM18 4.238L10.072 11.338L2 4.216V16H18V4.238ZM2.511 2L10.061 8.662L17.502 2H2.511Z" fill="#B8EF42"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="form__groups">
+                                <div class="form-select">
+                                    <select name="" id="">
+                                        <option value="" disabled selected hidden>Выберите вариант</option>
+                                        <option value="">Личные данные</option>
+                                        <option value="">аккаунт</option>
+                                        <option value="">изменения пароля</option>
+                                        <option value="">выход</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form__groups">
+                                <div class="form-group">
+                                    <input type="password">
+                                    <label for="">Повторите пароль</label>
+                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 7V6C3 4.4087 3.63214 2.88258 4.75736 1.75736C5.88258 0.632141 7.4087 0 9 0C10.5913 0 12.1174 0.632141 13.2426 1.75736C14.3679 2.88258 15 4.4087 15 6V7H17C17.2652 7 17.5196 7.10536 17.7071 7.29289C17.8946 7.48043 18 7.73478 18 8V20C18 20.2652 17.8946 20.5196 17.7071 20.7071C17.5196 20.8946 17.2652 21 17 21H1C0.734784 21 0.48043 20.8946 0.292893 20.7071C0.105357 20.5196 0 20.2652 0 20V8C0 7.73478 0.105357 7.48043 0.292893 7.29289C0.48043 7.10536 0.734784 7 1 7H3ZM16 9H2V19H16V9ZM8 14.732C7.61872 14.5119 7.32072 14.1721 7.15224 13.7653C6.98376 13.3586 6.9542 12.9076 7.06815 12.4823C7.1821 12.057 7.43319 11.6813 7.78248 11.4132C8.13177 11.1452 8.55973 10.9999 9 10.9999C9.44027 10.9999 9.86823 11.1452 10.2175 11.4132C10.5668 11.6813 10.8179 12.057 10.9319 12.4823C11.0458 12.9076 11.0162 13.3586 10.8478 13.7653C10.6793 14.1721 10.3813 14.5119 10 14.732V17H8V14.732ZM5 7H13V6C13 4.93913 12.5786 3.92172 11.8284 3.17157C11.0783 2.42143 10.0609 2 9 2C7.93913 2 6.92172 2.42143 6.17157 3.17157C5.42143 3.92172 5 4.93913 5 6V7Z" fill="#B8EF42"/>
+                                    </svg>
+                                    <button type="button" class="password-toggle">
+                                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.0002 0C16.3922 0 20.8782 3.88 21.8192 9C20.8792 14.12 16.3922 18 11.0002 18C5.60815 18 1.12215 14.12 0.181152 9C1.12115 3.88 5.60815 0 11.0002 0ZM11.0002 16C13.0396 15.9996 15.0185 15.3068 16.613 14.0352C18.2075 12.7635 19.3231 10.9883 19.7772 9C19.3214 7.0133 18.2051 5.24 16.6108 3.97003C15.0165 2.70005 13.0385 2.00853 11.0002 2.00853C8.96185 2.00853 6.98384 2.70005 5.38953 3.97003C3.79521 5.24 2.67892 7.0133 2.22315 9C2.67725 10.9883 3.79283 12.7635 5.3873 14.0352C6.98177 15.3068 8.96068 15.9996 11.0002 16ZM11.0002 13.5C9.80668 13.5 8.66209 13.0259 7.81817 12.182C6.97426 11.3381 6.50015 10.1935 6.50015 9C6.50015 7.80653 6.97426 6.66193 7.81817 5.81802C8.66209 4.97411 9.80668 4.5 11.0002 4.5C12.1936 4.5 13.3382 4.97411 14.1821 5.81802C15.026 6.66193 15.5002 7.80653 15.5002 9C15.5002 10.1935 15.026 11.3381 14.1821 12.182C13.3382 13.0259 12.1936 13.5 11.0002 13.5ZM11.0002 11.5C11.6632 11.5 12.2991 11.2366 12.7679 10.7678C13.2368 10.2989 13.5002 9.66304 13.5002 9C13.5002 8.33696 13.2368 7.70107 12.7679 7.23223C12.2991 6.76339 11.6632 6.5 11.0002 6.5C10.3371 6.5 9.70123 6.76339 9.23239 7.23223C8.76355 7.70107 8.50015 8.33696 8.50015 9C8.50015 9.66304 8.76355 10.2989 9.23239 10.7678C9.70123 11.2366 10.3371 11.5 11.0002 11.5Z" fill="#162833"/>
+                                        </svg>
+                                        <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.34203 12.782L6.41103 12.264L7.19803 9.325C6.01999 8.89053 4.92514 8.25736 3.96103 7.453L1.80803 9.607L0.393025 8.192L2.54703 6.039C1.3311 4.58276 0.514113 2.83576 0.176025 0.969L2.14403 0.610001C2.90303 4.812 6.57903 8 11 8C15.42 8 19.097 4.812 19.856 0.610001L21.824 0.968C21.4864 2.83502 20.6697 4.58237 19.454 6.039L21.607 8.192L20.192 9.607L18.039 7.453C17.0749 8.25736 15.9801 8.89053 14.802 9.325L15.589 12.265L13.658 12.782L12.87 9.842C11.6324 10.0541 10.3677 10.0541 9.13003 9.842L8.34203 12.782Z" fill="#162833"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="input-error">
+                                    <label for="">Повторите пароль</label>
+                                    <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 7V6C3 4.4087 3.63214 2.88258 4.75736 1.75736C5.88258 0.632141 7.4087 0 9 0C10.5913 0 12.1174 0.632141 13.2426 1.75736C14.3679 2.88258 15 4.4087 15 6V7H17C17.2652 7 17.5196 7.10536 17.7071 7.29289C17.8946 7.48043 18 7.73478 18 8V20C18 20.2652 17.8946 20.5196 17.7071 20.7071C17.5196 20.8946 17.2652 21 17 21H1C0.734784 21 0.48043 20.8946 0.292893 20.7071C0.105357 20.5196 0 20.2652 0 20V8C0 7.73478 0.105357 7.48043 0.292893 7.29289C0.48043 7.10536 0.734784 7 1 7H3ZM16 9H2V19H16V9ZM8 14.732C7.61872 14.5119 7.32072 14.1721 7.15224 13.7653C6.98376 13.3586 6.9542 12.9076 7.06815 12.4823C7.1821 12.057 7.43319 11.6813 7.78248 11.4132C8.13177 11.1452 8.55973 10.9999 9 10.9999C9.44027 10.9999 9.86823 11.1452 10.2175 11.4132C10.5668 11.6813 10.8179 12.057 10.9319 12.4823C11.0458 12.9076 11.0162 13.3586 10.8478 13.7653C10.6793 14.1721 10.3813 14.5119 10 14.732V17H8V14.732ZM5 7H13V6C13 4.93913 12.5786 3.92172 11.8284 3.17157C11.0783 2.42143 10.0609 2 9 2C7.93913 2 6.92172 2.42143 6.17157 3.17157C5.42143 3.92172 5 4.93913 5 6V7Z" fill="#B8EF42"/>
+                                    </svg>
+                                    <button type="button" class="password-toggle">
+                                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.0002 0C16.3922 0 20.8782 3.88 21.8192 9C20.8792 14.12 16.3922 18 11.0002 18C5.60815 18 1.12215 14.12 0.181152 9C1.12115 3.88 5.60815 0 11.0002 0ZM11.0002 16C13.0396 15.9996 15.0185 15.3068 16.613 14.0352C18.2075 12.7635 19.3231 10.9883 19.7772 9C19.3214 7.0133 18.2051 5.24 16.6108 3.97003C15.0165 2.70005 13.0385 2.00853 11.0002 2.00853C8.96185 2.00853 6.98384 2.70005 5.38953 3.97003C3.79521 5.24 2.67892 7.0133 2.22315 9C2.67725 10.9883 3.79283 12.7635 5.3873 14.0352C6.98177 15.3068 8.96068 15.9996 11.0002 16ZM11.0002 13.5C9.80668 13.5 8.66209 13.0259 7.81817 12.182C6.97426 11.3381 6.50015 10.1935 6.50015 9C6.50015 7.80653 6.97426 6.66193 7.81817 5.81802C8.66209 4.97411 9.80668 4.5 11.0002 4.5C12.1936 4.5 13.3382 4.97411 14.1821 5.81802C15.026 6.66193 15.5002 7.80653 15.5002 9C15.5002 10.1935 15.026 11.3381 14.1821 12.182C13.3382 13.0259 12.1936 13.5 11.0002 13.5ZM11.0002 11.5C11.6632 11.5 12.2991 11.2366 12.7679 10.7678C13.2368 10.2989 13.5002 9.66304 13.5002 9C13.5002 8.33696 13.2368 7.70107 12.7679 7.23223C12.2991 6.76339 11.6632 6.5 11.0002 6.5C10.3371 6.5 9.70123 6.76339 9.23239 7.23223C8.76355 7.70107 8.50015 8.33696 8.50015 9C8.50015 9.66304 8.76355 10.2989 9.23239 10.7678C9.70123 11.2366 10.3371 11.5 11.0002 11.5Z" fill="#162833"/>
+                                        </svg>
+                                        <svg width="22" height="13" viewBox="0 0 22 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.34203 12.782L6.41103 12.264L7.19803 9.325C6.01999 8.89053 4.92514 8.25736 3.96103 7.453L1.80803 9.607L0.393025 8.192L2.54703 6.039C1.3311 4.58276 0.514113 2.83576 0.176025 0.969L2.14403 0.610001C2.90303 4.812 6.57903 8 11 8C15.42 8 19.097 4.812 19.856 0.610001L21.824 0.968C21.4864 2.83502 20.6697 4.58237 19.454 6.039L21.607 8.192L20.192 9.607L18.039 7.453C17.0749 8.25736 15.9801 8.89053 14.802 9.325L15.589 12.265L13.658 12.782L12.87 9.842C11.6324 10.0541 10.3677 10.0541 9.13003 9.842L8.34203 12.782Z" fill="#162833"/>
+                                        </svg>
+                                    </button>
+                                    <div class="form-group__error">Пароли не совпадают</div>
+                                </div>
+                            </div>
+                            <div class="form__groups">
+                                <div class="form-switch">
+                                    <input type='checkbox' id='switch' />
+                                    <label for='switch' data-on="on" data-off="off"></label>
+                                </div>
+                            </div>
+
+                            <div class="form__groups">
+                                <button class="btn-blue btn">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 0.00012207H19C19.2652 0.00012207 19.5196 0.105479 19.7071 0.293015C19.8946 0.480552 20 0.734906 20 1.00012V17.0001C20 17.2653 19.8946 17.5197 19.7071 17.7072C19.5196 17.8948 19.2652 18.0001 19 18.0001H1C0.734784 18.0001 0.48043 17.8948 0.292893 17.7072C0.105357 17.5197 0 17.2653 0 17.0001V1.00012C0 0.734906 0.105357 0.480552 0.292893 0.293015C0.48043 0.105479 0.734784 0.00012207 1 0.00012207ZM18 4.23812L10.072 11.3381L2 4.21612V16.0001H18V4.23812ZM2.511 2.00012L10.061 8.66212L17.502 2.00012H2.511Z" fill="white"/>
+                                    </svg>
+                                    <span>Text</span>
+                                </button>
+                                <button class="btn-red btn">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 0.00012207H19C19.2652 0.00012207 19.5196 0.105479 19.7071 0.293015C19.8946 0.480552 20 0.734906 20 1.00012V17.0001C20 17.2653 19.8946 17.5197 19.7071 17.7072C19.5196 17.8948 19.2652 18.0001 19 18.0001H1C0.734784 18.0001 0.48043 17.8948 0.292893 17.7072C0.105357 17.5197 0 17.2653 0 17.0001V1.00012C0 0.734906 0.105357 0.480552 0.292893 0.293015C0.48043 0.105479 0.734784 0.00012207 1 0.00012207ZM18 4.23812L10.072 11.3381L2 4.21612V16.0001H18V4.23812ZM2.511 2.00012L10.061 8.66212L17.502 2.00012H2.511Z" fill="white"/>
+                                    </svg>
+                                    <span>Text</span>
+                                </button>
+                                <button class="btn-outline-black btn">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 0.00012207H19C19.2652 0.00012207 19.5196 0.105479 19.7071 0.293015C19.8946 0.480552 20 0.734906 20 1.00012V17.0001C20 17.2653 19.8946 17.5197 19.7071 17.7072C19.5196 17.8948 19.2652 18.0001 19 18.0001H1C0.734784 18.0001 0.48043 17.8948 0.292893 17.7072C0.105357 17.5197 0 17.2653 0 17.0001V1.00012C0 0.734906 0.105357 0.480552 0.292893 0.293015C0.48043 0.105479 0.734784 0.00012207 1 0.00012207ZM18 4.23812L10.072 11.3381L2 4.21612V16.0001H18V4.23812ZM2.511 2.00012L10.061 8.66212L17.502 2.00012H2.511Z" fill="white"/>
+                                    </svg>
+                                    <span>Text</span>
+                                </button>
+                            </div>
+
+                            <div class="form__groups">
+                                <div class="form-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <td>Заголовок</td>
+                                                <td>Заголовок</td>
+                                                <td>Заголовок</td>
+                                                <td>Заголовок</td>
+                                                <td>Заголовок</td>
+                                                <td>Заголовок</td>
+                                                <td>Заголовок</td>
+                                                <td>Заголовок</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Blue</td>
+                                                <td>504</td>
+                                                <td>133</td>
+                                                <td>462</td>
+                                                <td>690</td>
+                                                <td>950</td>
+                                                <td>158</td>
+                                                <td>245</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blue</td>
+                                                <td>504</td>
+                                                <td>133</td>
+                                                <td>462</td>
+                                                <td>690</td>
+                                                <td>950</td>
+                                                <td>158</td>
+                                                <td>245</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blue</td>
+                                                <td>504</td>
+                                                <td>133</td>
+                                                <td>462</td>
+                                                <td>690</td>
+                                                <td>950</td>
+                                                <td>158</td>
+                                                <td>245</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blue</td>
+                                                <td>504</td>
+                                                <td>133</td>
+                                                <td>462</td>
+                                                <td>690</td>
+                                                <td>950</td>
+                                                <td>158</td>
+                                                <td>245</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="pagination">
+                                <button class="pagination__btn pagination__btn-prev">
+                                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.21855 5.00011L5.51855 8.30011L4.57589 9.24278L0.333221 5.00011L4.57589 0.757446L5.51855 1.70011L2.21855 5.00011Z" fill="#162833" fill-opacity="0.65"/>
+                                    </svg>
+                                </button>
+                                <a href="" class="pagination__item pagination__item--active">1</a>
+                                <a href="" class="pagination__item">2</a>
+                                <a href="" class="pagination__item">3</a>
+                                <a href="" class="pagination__item">4</a>
+                                <button class="pagination__btn pagination__btn-next">
+                                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.78145 5.00011L0.481446 8.30011L1.42411 9.24278L5.66678 5.00011L1.42411 0.757446L0.481445 1.70011L3.78145 5.00011Z" fill="#162833" fill-opacity="0.65"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="gallery-img gallery-img-slider">
+                                <div class="swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="gallery-img__small">
+                                    <div class="swiper-button-prev gallery-img__prev">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.8278 12.0001L15.7778 16.9501L14.3638 18.3641L7.99983 12.0001L14.3638 5.63611L15.7778 7.05011L10.8278 12.0001Z" fill="#162833"/>
+                                        </svg>
+                                    </div>
+
+                                    <div thumbsSlider="" class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next gallery-img__next">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.1722 12.0001L8.22217 16.9501L9.63617 18.3641L16.0002 12.0001L9.63617 5.63611L8.22217 7.05011L13.1722 12.0001Z" fill="#162833"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-img gallery-video-slider">
+                                <div class="swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <button class="gallery-img__play">
+                                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                            <img src="assets/img/front/gallery.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-img__small">
+                                    <div class="swiper-button-prev gallery-img__prev">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.8278 12.0001L15.7778 16.9501L14.3638 18.3641L7.99983 12.0001L14.3638 5.63611L15.7778 7.05011L10.8278 12.0001Z" fill="#162833"/>
+                                        </svg>
+                                    </div>
+
+                                    <div thumbsSlider="" class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <button class="gallery-img__play">
+                                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M24 48C10.7448 48 0 37.2552 0 24C0 10.7448 10.7448 0 24 0C37.2552 0 48 10.7448 48 24C48 37.2552 37.2552 48 24 48ZM24 43.2C29.0922 43.2 33.9758 41.1772 37.5765 37.5765C41.1772 33.9758 43.2 29.0922 43.2 24C43.2 18.9078 41.1772 14.0242 37.5765 10.4236C33.9758 6.82285 29.0922 4.8 24 4.8C18.9078 4.8 14.0242 6.82285 10.4236 10.4236C6.82285 14.0242 4.8 18.9078 4.8 24C4.8 29.0922 6.82285 33.9758 10.4236 37.5765C14.0242 41.1772 18.9078 43.2 24 43.2ZM20.6928 15.396L32.4024 23.2008C32.5341 23.2884 32.6421 23.4072 32.7168 23.5467C32.7915 23.6861 32.8305 23.8418 32.8305 24C32.8305 24.1582 32.7915 24.3139 32.7168 24.4533C32.6421 24.5928 32.5341 24.7116 32.4024 24.7992L20.6904 32.604C20.546 32.6997 20.3784 32.7546 20.2053 32.7628C20.0322 32.7709 19.8602 32.7321 19.7074 32.6504C19.5546 32.5688 19.4267 32.4472 19.3374 32.2988C19.2481 32.1503 19.2006 31.9805 19.2 31.8072V16.1928C19.2003 16.0192 19.2477 15.8489 19.3372 15.7C19.4266 15.5512 19.5548 15.4294 19.708 15.3477C19.8611 15.2659 20.0336 15.2272 20.2071 15.2357C20.3805 15.2442 20.5484 15.2996 20.6928 15.396Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next gallery-img__next">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.1722 12.0001L8.22217 16.9501L9.63617 18.3641L16.0002 12.0001L9.63617 5.63611L8.22217 7.05011L13.1722 12.0001Z" fill="#162833"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-news">
+                                <h1 class="form__title">Блоки с контентом</h1>
+                                <div class="form-news__items">
+                                    <div class="form-news__item">
+                                        <div class="form-news__item-show">
+                                            <div class="form-news__item-show-left">
+                                                <strong>вИДЕО: </strong>
+                                                <span> Короткое описание</span>
+                                            </div>
+                                            <i>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9998 10.8281L7.04977 15.7781L5.63577 14.3641L11.9998 8.00008L18.3638 14.3641L16.9498 15.7781L11.9998 10.8281Z" fill="#162833"/>
+                                                </svg>
+                                            </i>
+                                        </div>
+                                        <div class="form-news__item-hidden">
+                                            <div class="form-news__item-img">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="form-news__item-right">
+                                                <div class="form-news__item-title">Тезисы об экономике Белоруссии: страна для выживания или страна для жизни</div>
+                                                <div class="form-news__item-date">12 мая 2021г</div>
+                                                <div class="form-news__item-desc">В чем правы и где могут ошибаться оппоненты Александра Лукашенко</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-news__item">
+                                        <div class="form-news__item-show">
+                                            <div class="form-news__item-show-left">
+                                                <strong>вИДЕО: </strong>
+                                                <span> Короткое описание</span>
+                                            </div>
+                                            <i>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9998 10.8281L7.04977 15.7781L5.63577 14.3641L11.9998 8.00008L18.3638 14.3641L16.9498 15.7781L11.9998 10.8281Z" fill="#162833"/>
+                                                </svg>
+                                            </i>
+                                        </div>
+                                        <div class="form-news__item-hidden">
+                                            <div class="form-news__item-img">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="form-news__item-right">
+                                                <div class="form-news__item-title">Тезисы об экономике Белоруссии: страна для выживания или страна для жизни</div>
+                                                <div class="form-news__item-date">12 мая 2021г</div>
+                                                <div class="form-news__item-desc">В чем правы и где могут ошибаться оппоненты Александра Лукашенко</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-news__item">
+                                        <div class="form-news__item-show">
+                                            <div class="form-news__item-show-left">
+                                                <strong>вИДЕО: </strong>
+                                                <span> Короткое описание</span>
+                                            </div>
+                                            <i>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9998 10.8281L7.04977 15.7781L5.63577 14.3641L11.9998 8.00008L18.3638 14.3641L16.9498 15.7781L11.9998 10.8281Z" fill="#162833"/>
+                                                </svg>
+                                            </i>
+                                        </div>
+                                        <div class="form-news__item-hidden">
+                                            <div class="form-news__item-img">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="form-news__item-right">
+                                                <div class="form-news__item-title">Тезисы об экономике Белоруссии: страна для выживания или страна для жизни</div>
+                                                <div class="form-news__item-date">12 мая 2021г</div>
+                                                <div class="form-news__item-desc">В чем правы и где могут ошибаться оппоненты Александра Лукашенко</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-news__item">
+                                        <div class="form-news__item-show">
+                                            <div class="form-news__item-show-left">
+                                                <strong>вИДЕО: </strong>
+                                                <span> Короткое описание</span>
+                                            </div>
+                                            <i>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9998 10.8281L7.04977 15.7781L5.63577 14.3641L11.9998 8.00008L18.3638 14.3641L16.9498 15.7781L11.9998 10.8281Z" fill="#162833"/>
+                                                </svg>
+                                            </i>
+                                        </div>
+                                        <div class="form-news__item-hidden">
+                                            <div class="form-news__item-img">
+                                                <img src="assets/img/front/gallery.jpg" alt="">
+                                            </div>
+                                            <div class="form-news__item-right">
+                                                <div class="form-news__item-title">Тезисы об экономике Белоруссии: страна для выживания или страна для жизни</div>
+                                                <div class="form-news__item-date">12 мая 2021г</div>
+                                                <div class="form-news__item-desc">В чем правы и где могут ошибаться оппоненты Александра Лукашенко</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="account-main__right"></div> -->
+
+
+                </div>
+                <div class="account-footer">
+                    <div>
+                        <div class="account-footer__links">
+                            <a href="">Главная</a>
+                            <a href="">Кабинет</a>
+                            <a href="">Новости</a>
+                            <a href="">Отзывы</a>
+                        </div>
+                        <div class="account-footer__name">(С) Название сайта</div>
+                        <div class="account-footer__sec">Все права защищены</div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+    </div>
+
+
+    <script src="assets/js/lib/jquery.js"></script>
+    <script src="assets/js/lib/jquery.nice-select.min.js"></script>
+    <script src="assets/js/lib/swiper.js"></script>
+    <script src="assets/js/front/account/account.js"></script>
+    <script src="assets/js/front/form/form.js"></script>
+    <script src="assets/js/front/main.js"></script>
+</body>
+
+</html>
