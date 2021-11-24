@@ -2,9 +2,11 @@ $(document).ready(function() {
     $(".account-sidebar__item-show").click(function() {
         if ($(this).hasClass("account-sidebar__item-show--active")) {
             $(".account-sidebar__item-show").removeClass("account-sidebar__item-show--active")
+            $(".account-sidebar__item-hidden").slideUp()
         } else {
             $(".account-sidebar__item-show").removeClass("account-sidebar__item-show--active")
             $(this).addClass("account-sidebar__item-show--active")
+            $(this).siblings(".account-sidebar__item-hidden").slideDown()
         }
     })
 
@@ -63,6 +65,16 @@ $(document).ready(function() {
             }
         }
     });
+
+    $(document).mouseup(function(e) {
+        var div = $(".account-sidebar");
+        if (!div.is(e.target) &&
+            div.has(e.target).length === 0) {
+            $(".account-sidebar").removeClass("account-sidebar--active")
+        }
+    });
+
+
 
 
     $(".account-sidebar-btn").click(function() {

@@ -78,9 +78,7 @@
             }
         }
         &-show--active {
-            &~.account-sidebar__item-hidden {
-                display: block;
-            }
+            color: #fff;
             i {
                 transform: rotate(0deg);
             }
@@ -98,7 +96,6 @@
                 color: #FFFFFF;
                 &:hover {
                     text-decoration-line: underline !important;
-                    font-weight: 600;
                     color: #FFFFFF;
                 }
             }
@@ -153,7 +150,6 @@
     margin-bottom: 50px;
     flex-shrink: 0;
     &__language {
-        margin-right: 30px;
         position: relative;
         &-show {
             display: flex;
@@ -185,6 +181,7 @@
                 width: 24px;
                 height: 24px;
                 border-radius: 50%;
+                border: 1px solid #ccc;
             }
         }
         &-current--active {
@@ -267,92 +264,6 @@
             line-height: 12px;
             color: rgba(22, 40, 51, 0.65);
             text-align: right;
-        }
-    }
-    &__burger {
-        &-menu {
-            position: absolute;
-            right: 25px;
-            top: 65px;
-            background: #162833;
-            box-shadow: 0px 20px 40px rgba(22, 40, 51, 0.25);
-            border-radius: 20px;
-            padding: 10px;
-            width: 290px;
-            display: none;
-        }
-        &-link {
-            height: 35px;
-            display: flex;
-            align-items: center;
-            font-size: 12px;
-            line-height: 15px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            &:hover {
-                font-weight: bold;
-                text-decoration: underline;
-                color: #fff;
-            }
-        }
-        &-item {
-            padding: 10px;
-            &:not(:last-child) {
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            }
-            &-show {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                height: 35px;
-                font-size: 12px;
-                line-height: 15px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                &:hover {
-                    font-weight: bold;
-                    text-decoration: underline;
-                    color: #fff;
-                    cursor: pointer;
-                }
-                i {
-                    transform: rotate(-90deg);
-                    transition: all .2s;
-                }
-            }
-            &-show--active {
-                i {
-                    transform: rotate(0deg);
-                }
-                &~.account-header__burger-item-hidden {
-                    display: block;
-                }
-            }
-            &-hidden {
-                display: none;
-                a {
-                    display: flex;
-                    align-items: center;
-                    margin-top: 10px;
-                    height: 35px;
-                    font-size: 12px;
-                    line-height: 15px;
-                    color: #FFFFFF;
-                    padding: 0 20px;
-                    &:hover {
-                        font-weight: bold;
-                        text-decoration: underline;
-                        color: #fff;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
-    &__burger--active {
-        pointer-events: none;
-        &~.account-header__burger-menu {
-            display: block;
         }
     }
 }
@@ -500,11 +411,19 @@
         .form-group {
             flex-grow: 1;
             margin-bottom: 0;
+            pointer-events: none;
         }
         &-btn {
             margin-left: 13px;
             flex-shrink: 0;
         }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .account-main {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -522,21 +441,6 @@
 }
 
 @media screen and (max-width: 1300px) {
-    .account-main {
-        padding: 0 20px 20px;
-        display: block;
-        &__right {
-            width: 100%;
-            margin-left: 0;
-            margin-top: 30px;
-        }
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .account-header {
-        margin-bottom: 20px;
-    }
     .account-content {
         padding-left: 0;
     }
@@ -544,12 +448,38 @@
         left: -100%;
         z-index: 3;
         transition: all .3s;
+        width: 85%;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            left: 100%;
+            top: 0;
+            background: #000;
+            opacity: 0;
+            pointer-events: none;
+            transition: all .1s;
+        }
         &-btn {
             display: flex;
             margin-right: auto;
         }
         &__close {
             display: flex;
+            &:hover {
+                path {
+                    fill: #52B4EC;
+                }
+            }
+            svg {
+                width: 30px;
+                height: auto;
+            }
+            path {
+                fill: #fff;
+            }
         }
         &__top {
             display: flex;
@@ -560,12 +490,28 @@
     }
     .account-sidebar--active {
         left: 0;
-        width: 100%;
+        &:before {
+            opacity: 0.4;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .account-header {
+        margin-bottom: 20px;
     }
     .account-main {
         padding: 0 5px 5px;
         &__left {
             padding: 15px 10px;
+        }
+    }
+    .account-main {
+        padding: 0 20px 20px;
+        display: block;
+        &__right {
+            margin-left: 0;
+            margin-top: 30px;
         }
     }
 }
@@ -592,6 +538,11 @@
         &__right {
             margin-left: 0;
             margin-top: 25px;
+        }
+    }
+    .account-main {
+        &__right {
+            width: 100%;
         }
     }
 }

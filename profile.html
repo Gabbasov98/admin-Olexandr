@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/lib/nice-select.css">
-    <link rel="stylesheet" href="assets/css/lib/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/front/forms/forms.css">
-    <link rel="stylesheet" href="assets/css/front/account/account.css">
-    <link rel="stylesheet" href="assets/css/front/main.css">
+    <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/lib/nice-select.css">
+    <link rel="stylesheet" href="/assets/css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/front/forms/forms.css">
+    <link rel="stylesheet" href="/assets/css/front/account/account.css">
+    <link rel="stylesheet" href="/assets/css/front/main.css">
     <title>Профиль</title>
 </head>
 
@@ -124,49 +124,18 @@
                             </i>
                         </div>
                         <div class="account-header__language-hidden">
-                            <div data-lang-variant="1" class="account-header__language-variant account-header__language-variant--active">
+                            <a href="" data-lang-variant="1" class="account-header__language-variant account-header__language-variant--active">
                                 <img src="assets/img/front/account/ru.png" alt="">
                                 <span>RU</span>
-                            </div>
-                            <div data-lang-variant="2" class="account-header__language-variant">
+                            </a>
+                            <a href="" data-lang-variant="2" class="account-header__language-variant">
                                 <img src="assets/img/front/account/en.png" alt="">
                                 <span>EN</span>
-                            </div>
-                            <div data-lang-variant="3" class="account-header__language-variant">
+                            </a>
+                            <a href="" data-lang-variant="3" class="account-header__language-variant">
                                 <img src="assets/img/front/account/de.png" alt="">
                                 <span>DE</span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="account-header__burger">
-                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="#52B4EC"/>
-                        </svg>
-                    </button>
-                    <div class="account-header__burger-menu">
-                        <div class="account-header__burger-item">
-                            <a href="" class="account-header__burger-link">Личные данные</a>
-                        </div>
-                        <div class="account-header__burger-item">
-                            <div class="account-header__burger-item-show">
-                                <span>аккаунт</span>
-                                <i>
-                                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6.99999 5.67198L11.95 0.721985L13.364 2.13598L6.99999 8.49998L0.635986 2.13598L2.04999 0.721985L6.99999 5.67198Z" fill="#B8EF42"/>
-                                    </svg>
-                                </i>
-                            </div>
-                            <div class="account-header__burger-item-hidden">
-                                <a href="">Меню второго уровня</a>
-                                <a href="">Меню второго уровня</a>
-                                <a href="">Меню второго уровня</a>
-                            </div>
-                        </div>
-                        <div class="account-header__burger-item">
-                            <a href="" class="account-header__burger-link">изменения пароля</a>
-                        </div>
-                        <div class="account-header__burger-item">
-                            <a href="" class="account-header__burger-link">выход</a>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -183,7 +152,7 @@
                                                 <path d="M32.2898 109.297L30.4767 111.269L32.569 112.941C42.6272 120.983 55.1267 125.354 68.0041 125.333C81.9959 125.332 94.8071 120.273 104.708 111.892L106.755 110.159L104.883 108.239C100.227 103.461 94.6591 99.6651 88.5101 97.0763C82.362 94.4878 75.7572 93.1584 69.0865 93.1667C62.1708 93.1591 55.329 94.5888 48.995 97.3651C42.66 100.142 36.9713 104.205 32.2898 109.297ZM27.1422 102.24C32.4797 96.7633 38.8426 92.3847 45.8716 89.3556C53.202 86.1968 61.1015 84.5726 69.0835 84.5833L69.0901 84.5833C76.7862 84.5733 84.4085 86.0837 91.5193 89.0277C98.6301 91.9717 105.089 96.2914 110.526 101.739L112.618 103.835L114.333 101.421C120.415 92.8609 124.007 82.7838 124.709 72.3071C125.412 61.8304 123.199 51.3638 118.315 42.0685C113.431 32.7732 106.068 25.0126 97.0416 19.6477C88.0154 14.2828 77.6794 11.5233 67.1802 11.6754C56.6811 11.8276 46.4293 14.8853 37.5623 20.5095C28.6953 26.1337 21.5598 34.1044 16.9473 43.5373C12.3348 52.9702 10.4257 63.4965 11.4318 73.9484C12.4379 84.4003 16.3198 94.3692 22.647 102.749L27.1422 108.703V102.24ZM68.0002 133.917C31.8705 133.917 2.5835 104.63 2.5835 68.5C2.5835 32.3703 31.8705 3.08333 68.0002 3.08333C104.13 3.08333 133.417 32.3703 133.417 68.5C133.417 104.63 104.13 133.917 68.0002 133.917ZM68.0002 72.7917C61.4582 72.7917 55.1841 70.1929 50.5582 65.567C45.9323 60.9411 43.3335 54.667 43.3335 48.125C43.3335 41.583 45.9323 35.3089 50.5582 30.683C55.1841 26.0571 61.4582 23.4583 68.0002 23.4583C74.5422 23.4583 80.8162 26.0571 85.4421 30.683C90.068 35.3089 92.6668 41.583 92.6668 48.125C92.6668 54.667 90.068 60.9411 85.4421 65.567C80.8162 70.1929 74.5422 72.7917 68.0002 72.7917ZM68.0002 64.2083C72.2657 64.2083 76.3566 62.5138 79.3728 59.4976C82.389 56.4814 84.0835 52.3906 84.0835 48.125C84.0835 43.8594 82.389 39.7686 79.3728 36.7524C76.3566 33.7362 72.2657 32.0417 68.0002 32.0417C63.7346 32.0417 59.6437 33.7361 56.6275 36.7524C53.6113 39.7686 51.9168 43.8594 51.9168 48.125C51.9168 52.3906 53.6113 56.4814 56.6275 59.4976C59.6437 62.5138 63.7346 64.2083 68.0002 64.2083Z" fill="#DAEEF9" stroke="white" stroke-width="5"/>
                                             </svg>
                                         </div>
-                                        <div class="profile__upload">
+                                        <div class="profile__upload btn-blue btn">
                                             <input type="file" name="" id="">
                                             <label for="">загрузить фото</label>
                                         </div>
@@ -198,7 +167,7 @@
                                 <div class="profile__right">
                                     <div class="profile__group">
                                         <div class="form-group">
-                                            <input type="text">
+                                            <input type="text" value="text">
                                             <label for="">Имя</label>
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM5.013 16.256C6.42855 17.3877 8.18768 18.0029 10 18C11.97 18 13.773 17.288 15.167 16.108C14.5157 15.4397 13.7371 14.9089 12.877 14.5468C12.017 14.1847 11.0931 13.9988 10.16 14C9.19259 13.9989 8.2355 14.1989 7.34947 14.5872C6.46343 14.9756 5.66778 15.5439 5.013 16.256ZM3.616 14.82C4.45645 13.9281 5.47067 13.2177 6.59614 12.7327C7.72161 12.2477 8.93448 11.9984 10.16 12C11.3417 11.9985 12.512 12.2304 13.6037 12.6824C14.6955 13.1344 15.6873 13.7976 16.522 14.634C17.3781 13.4291 17.8836 12.0106 17.9826 10.5359C18.0815 9.06119 17.77 7.58789 17.0825 6.27946C16.395 4.97102 15.3585 3.87862 14.088 3.12345C12.8174 2.36827 11.3625 1.97984 9.8846 2.00125C8.40672 2.02267 6.96366 2.45308 5.71552 3.24476C4.46738 4.03643 3.46296 5.1584 2.81369 6.4862C2.16442 7.814 1.89569 9.29571 2.03732 10.7669C2.17894 12.2382 2.72537 13.6414 3.616 14.821V14.82ZM10 11C8.93913 11 7.92172 10.5786 7.17157 9.82843C6.42143 9.07828 6 8.06087 6 7C6 5.93913 6.42143 4.92172 7.17157 4.17157C7.92172 3.42143 8.93913 3 10 3C11.0609 3 12.0783 3.42143 12.8284 4.17157C13.5786 4.92172 14 5.93913 14 7C14 8.06087 13.5786 9.07828 12.8284 9.82843C12.0783 10.5786 11.0609 11 10 11ZM10 9C10.5304 9 11.0391 8.78929 11.4142 8.41421C11.7893 8.03914 12 7.53043 12 7C12 6.46957 11.7893 5.96086 11.4142 5.58579C11.0391 5.21071 10.5304 5 10 5C9.46957 5 8.96086 5.21071 8.58579 5.58579C8.21071 5.96086 8 6.46957 8 7C8 7.53043 8.21071 8.03914 8.58579 8.41421C8.96086 8.78929 9.46957 9 10 9Z" fill="#B8EF42"/>
@@ -335,12 +304,12 @@
     </div>
 
 
-    <script src="assets/js/lib/jquery.js"></script>
-    <script src="assets/js/lib/jquery.nice-select.min.js"></script>
-    <script src="assets/js/lib/swiper.js"></script>
-    <script src="assets/js/front/account/account.js"></script>
-    <script src="assets/js/front/form/form.js"></script>
-    <script src="assets/js/front/main.js"></script>
+    <script src="/assets/js/lib/jquery.js"></script>
+    <script src="/assets/js/lib/jquery.nice-select.min.js"></script>
+    <script src="/assets/js/lib/swiper.js"></script>
+    <script src="/assets/js/front/account/account.js"></script>
+    <script src="/assets/js/front/form/form.js"></script>
+    <script src="/assets/js/front/main.js"></script>
 </body>
 
 </html>
