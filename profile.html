@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/lib/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/lib/nice-select.css">
-    <link rel="stylesheet" href="/assets/css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/front/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/front/libs/nice-select.css">
+    <link rel="stylesheet" href="/assets/css/front/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/front/main.css">
     <link rel="stylesheet" href="/assets/css/front/forms/forms.css">
     <link rel="stylesheet" href="/assets/css/front/account/account.css">
-    <link rel="stylesheet" href="/assets/css/front/main.css">
     <title>Профиль</title>
 </head>
 
@@ -21,7 +21,7 @@
             <aside class="account-sidebar">
                 <div class="account-sidebar__top">
                     <a href="" class="account-sidebar__logo">
-                        <img src="assets/img/front/logo.png" alt="">
+                        <img src="/assets/img/front/Logo-dark.png" alt="">
                     </a>
                     <button class="account-sidebar__close">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,15 +105,15 @@
                         <div class="account-header__language-show">
                             <div class="account-header__language-currents">
                                 <div data-lang-current="1" class="account-header__language-current account-header__language-current--active">
-                                    <img src="assets/img/front/account/ru.png" alt="">
+                                    <img src="/assets/img/front/account/ru.png" alt="">
                                     <span>RU</span>
                                 </div>
                                 <div data-lang-current="2" class="account-header__language-current">
-                                    <img src="assets/img/front/account/en.png" alt="">
+                                    <img src="/assets/img/front/account/en.png" alt="">
                                     <span>EN</span>
                                 </div>
                                 <div data-lang-current="3" class="account-header__language-current">
-                                    <img src="assets/img/front/account/de.png" alt="">
+                                    <img src="/assets/img/front/account/de.png" alt="">
                                     <span>DE</span>
                                 </div>
                             </div>
@@ -125,16 +125,48 @@
                         </div>
                         <div class="account-header__language-hidden">
                             <a href="" data-lang-variant="1" class="account-header__language-variant account-header__language-variant--active">
-                                <img src="assets/img/front/account/ru.png" alt="">
+                                <img src="/assets/img/front/account/ru.png" alt="">
                                 <span>RU</span>
                             </a>
                             <a href="" data-lang-variant="2" class="account-header__language-variant">
-                                <img src="assets/img/front/account/en.png" alt="">
+                                <img src="/assets/img/front/account/en.png" alt="">
                                 <span>EN</span>
                             </a>
                             <a href="" data-lang-variant="3" class="account-header__language-variant">
-                                <img src="assets/img/front/account/de.png" alt="">
+                                <img src="/assets/img/front/account/de.png" alt="">
                                 <span>DE</span>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="account-header__burger">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="#52B4EC"/>
+                        </svg>
+                    </button>
+                    <div class="account-header__burger-menu">
+                        <div class="account-header__burger-item">
+                            <a href="" class="account-header__burger-link">Личные данные</a>
+                        </div>
+                        <div class="account-header__burger-item">
+                            <div class="account-header__burger-item-show">
+                                <span>аккаунт</span>
+                                <i>
+                                    <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.99999 5.67198L11.95 0.721985L13.364 2.13598L6.99999 8.49998L0.635986 2.13598L2.04999 0.721985L6.99999 5.67198Z" fill="#B8EF42"/>
+                                    </svg>
+                                </i>
+                            </div>
+                            <div class="account-header__burger-item-hidden">
+                                <a href="">Меню второго уровня</a>
+                                <a href="">Меню второго уровня</a>
+                                <a href="">Меню второго уровня</a>
+                            </div>
+                        </div>
+                        <div class="account-header__burger-item">
+                            <a href="" class="account-header__burger-link">изменения пароля</a>
+                        </div>
+                        <div class="account-header__burger-item">
+                            <a href="" class="account-header__burger-link">выход</a>
                             </a>
                         </div>
                     </div>
@@ -282,8 +314,8 @@
                         </div>
                     </div>
                     <div class="account-main__right">
-                        <img src="assets/img/front/man.png" alt="" class="account-main__right-img">
-                        <img src="assets/img/front/galery2.jpg" alt="" class="account-main__right-img">
+                        <img src="/assets/img/front/man.png" alt="" class="account-main__right-img">
+                        <img src="/assets/img/front/galery2.jpg" alt="" class="account-main__right-img">
                     </div>
                 </div>
                 <div class="account-footer">
@@ -304,9 +336,9 @@
     </div>
 
 
-    <script src="/assets/js/lib/jquery.js"></script>
-    <script src="/assets/js/lib/jquery.nice-select.min.js"></script>
-    <script src="/assets/js/lib/swiper.js"></script>
+    <script src="/assets/js/front/libs/jquery.js"></script>
+    <script src="/assets/js/front/libs/jquery.nice-select.min.js"></script>
+    <script src="/assets/js/front/libs/swiper.js"></script>
     <script src="/assets/js/front/account/account.js"></script>
     <script src="/assets/js/front/form/form.js"></script>
     <script src="/assets/js/front/main.js"></script>

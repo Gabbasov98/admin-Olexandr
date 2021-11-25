@@ -19,14 +19,6 @@ $(document).ready(function() {
 
     })
 
-    $(".account-header__language-variant").click(function() {
-        let path = $(this).attr("data-lang-variant")
-        $(".account-header__language-variant").removeClass("account-header__language-variant--active")
-        $(this).addClass("account-header__language-variant--active")
-        $(".account-header__language-current").removeClass("account-header__language-current--active")
-        $(`.account-header__language-current[data-lang-current="${path}"]`).addClass("account-header__language-current--active")
-        $(".account-header__language-show").removeClass("account-header__language-show--active")
-    })
 
 
     $(document).mouseup(function(e) {

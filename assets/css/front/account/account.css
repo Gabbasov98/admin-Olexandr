@@ -25,12 +25,13 @@
   display: none;
 }
 .account-sidebar__logo {
-  width: 50px;
+  height: 50px;
   display: block;
   margin-left: 20px;
 }
 .account-sidebar__logo img {
-  width: 100%;
+  height: 100%;
+  width: auto;
 }
 .account-sidebar__item {
   padding: 10px 0;
@@ -150,6 +151,7 @@
 }
 .account-header__language {
   position: relative;
+  margin-right: 30px;
 }
 .account-header__language-show {
   display: flex;
@@ -160,8 +162,12 @@
   margin-left: 9px;
   flex-shrink: 0;
 }
+.account-header__language-show--active {
+  pointer-events: none;
+}
 .account-header__language-show--active i {
   transform: rotate(180deg);
+  transition: all .2s;
 }
 .account-header__language-show--active ~ .account-header__language-hidden {
   display: block;
@@ -261,6 +267,87 @@
   line-height: 12px;
   color: rgba(22, 40, 51, 0.65);
   text-align: right;
+}
+.account-header__burger-menu {
+  position: absolute;
+  right: 25px;
+  top: 65px;
+  background: #162833;
+  box-shadow: 0px 20px 40px rgba(22, 40, 51, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  width: 290px;
+  display: none;
+}
+.account-header__burger-link {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.account-header__burger-link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fff;
+}
+.account-header__burger-item {
+  padding: 10px;
+}
+.account-header__burger-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.account-header__burger-item-show {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 35px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.account-header__burger-item-show:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+}
+.account-header__burger-item-show i {
+  transform: rotate(-90deg);
+  transition: all .2s;
+}
+.account-header__burger-item-show--active i {
+  transform: rotate(0deg);
+}
+.account-header__burger-item-show--active ~ .account-header__burger-item-hidden {
+  display: block;
+}
+.account-header__burger-item-hidden {
+  display: none;
+}
+.account-header__burger-item-hidden a {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 35px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  padding: 0 20px;
+}
+.account-header__burger-item-hidden a:hover {
+  text-decoration: underline;
+  color: #fff;
+  cursor: pointer;
+}
+.account-header__burger--active {
+  pointer-events: none;
+}
+.account-header__burger--active ~ .account-header__burger-menu {
+  display: block;
 }
 
 .account-main {
@@ -382,6 +469,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .profile__upload input {
   position: absolute;
@@ -391,6 +479,11 @@
   left: 0;
   top: 0;
   cursor: pointer;
+  z-index: 3;
+}
+.profile__upload label {
+  position: relative;
+  z-index: 2;
 }
 .profile__change-pass {
   width: 100%;
@@ -410,6 +503,9 @@
 .profile__group-btn {
   margin-left: 13px;
   flex-shrink: 0;
+}
+.profile__group-btn:hover path {
+  fill: #52B4EC;
 }
 
 @media screen and (max-width: 1700px) {
@@ -499,8 +595,7 @@
     display: block;
   }
   .account-main__right {
-    margin-left: 0;
-    margin-top: 30px;
+    margin: 30px auto 0;
   }
 }
 @media screen and (max-width: 768px) {

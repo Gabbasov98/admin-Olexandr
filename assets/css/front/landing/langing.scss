@@ -1,12 +1,15 @@
 .landing {
     padding: 100px 0;
+    background-image: url(/assets/img/front/mini_landing.png);
+    background-size: cover;
     &__logo {
         display: block;
         width: 100%;
         margin-bottom: 65px;
-        width: 100px;
+        height: 100px;
         img {
-            width: 100%;
+            height: 100%;
+            width: auto;
         }
     }
     &__inner {
@@ -144,6 +147,10 @@
         }
         &__form {
             margin-top: 30px;
+            &-btn {
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
     }
 }

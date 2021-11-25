@@ -123,15 +123,8 @@ $(document).ready(function() {
     })
 
     $(".form-news__item-show").click(function() {
-        if ($(this).hasClass("form-news__item-show--active")) {
-            $(".form-news__item-show").removeClass("form-news__item-show--active")
-            $(".form-news__item-hidden").slideUp()
-        } else {
-            $(".form-news__item-show").removeClass("form-news__item-show--active")
-            $(this).addClass("form-news__item-show--active")
-            $(".form-news__item-hidden").slideUp()
-            $(this).siblings(".form-news__item-hidden").slideDown()
-        }
+        $(this).toggleClass("form-news__item-show--active")
+        $(this).siblings(".form-news__item-hidden").slideToggle()
     })
 
 })
